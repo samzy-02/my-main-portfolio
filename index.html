@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h2>My Portfolio</h2>
+    <nav id="nav-menu" class="hidden">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="pics/SamsonCv.pdf" target="_blank">CV</a>
+    </nav>
+    <button class="toggle-btn" onclick="toggleTheme()">Dark Mode</button>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+</header>
+
+  <div class="hero" id="home">
+    <h1>Hello, I'm Samson</h1>
+    <p>Frontend Developer • CS Student • Web Enthusiast</p>
+    <img src="pics/pics.jpg" alt="Profile Picture" />
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Samson Igbama, a 400-level Computer Science student at Bells University of Technology. I’m passionate about web development and enjoy creating responsive, user-friendly websites. I’m eager to apply my skills in HTML, CSS, JavaScript, and WordPress to build impactful digital solutions.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-box"><h3>HTML</h3><p>Advanced</p></div>
+      <div class="skill-box"><h3>CSS</h3><p>Advanced</p></div>
+      <div class="skill-box"><h3>JavaScript</h3><p>Intermediate</p></div>
+      <div class="skill-box"><h3>WordPress</h3><p>Intermediate</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>My Portfolio Website</h3>
+        <p>This is my personal responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+        <a href="https://samzy-02.github.io/my-portfolio/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>My Static login-page</h3>
+        <p>
+            This is a unique repository that allow users to login into 
+            a website that was built by HTML and CSS
+        </p>
+        <a href="https://samzy-02.github.io/LoginPage01/sign-in.html" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:Igbamasamson@gmail.com">Igbamasamson@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/samzy-02" target="_blank" rel="noopener noreferrer">https://github.com/samzy-02</a></p>
+        <p>Phone: <a href="tel:09060030977">+234 9060030977</a></p>
+    </section>
+
+  <footer>
+    <p>© 2025 Samson. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
